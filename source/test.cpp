@@ -1,7 +1,7 @@
 #include "header.h"
 using namespace std;
 
-int main()
+int math()
 {
 	int a = 2;
 	int b = 4;
