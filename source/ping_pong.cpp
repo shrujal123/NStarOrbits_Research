@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int ping_pong()
+int main()
 {
 
 	const int PING_PONG_LIMIT = 10;
@@ -41,5 +41,6 @@ int ping_pong()
 	}
 
 	MPI_Finalize();
+	return 0;
 
 }
