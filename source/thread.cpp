@@ -31,7 +31,7 @@ int main ()
 
 	thread threads[5];
 
-	for(int i = 0; i < 5; i++)
+for(int i = 0; i < 5; i++)
 	{
 		threads[i] = thread(print_thread_id, i+1);
 	}
