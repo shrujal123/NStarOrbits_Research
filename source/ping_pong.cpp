@@ -25,7 +25,7 @@ int main()
 	int ping_pong_count = 0;
 	int opp_rank = (world_rank + 1)%2;
 
-	while(ping_pong_count < PING_PONG_LIMIT)
+	while(1)
 	{
 		if(world_rank == ping_pong_count%2)
 		{

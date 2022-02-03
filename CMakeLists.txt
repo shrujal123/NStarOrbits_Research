@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
 #set the project name
-<<<<<<< HEAD
 project(Test LANGUAGES C CXX)
 set(sourceFiles ${PROJECT_SOURCE_DIR}/source/ping_pong.cpp)
 set(INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/include)
@@ -53,20 +52,4 @@ set_target_properties(
         #COMPILE_FLAGS "${GDP_COMPILE_FLAGS}"
         RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin"
         OUTPUT_NAME "exe"
-=======
-project(Test)
-set(my_sourceFiles ${PROJECT_SOURCE_DIR}/source/func.cpp ${PROJECT_SOURCE_DIR}/source/header.cpp ${PROJECT_SOURCE_DIR}/source/helloWorld.cpp ${PROJECT_SOURCE_DIR}/source/test.cpp )
-set(GDP_INCLUDE_DIRS ${PROJECT_SOURCE_DIR}/include)
-#include_directories(${PROJECT_SOURCE_DIR}/include)
-add_executable(run ${my_sourceFiles})
-
-set_target_properties(
-	run
-	PROPERTIES
-	INCLUDE_DIRECTORIES "${GDP_INCLUDE_DIRS}"
-	#COMPILE_DEFINITIONS "${GDP_COMPILE_DEFINITIONS}"
-	#COMPILE_FLAGS "${GDP_COMPILE_FLAGS}"
-	RUNTIME_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin"
-	OUTPUT_NAME "run"
->>>>>>> a7bf88464f11a49b4f597e82a1fec1839c123012
 )

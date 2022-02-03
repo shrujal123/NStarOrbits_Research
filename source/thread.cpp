@@ -1,7 +1,7 @@
 #include <iostream>
 #include <thread>
 #include <mutex>
-#include <mpi.h>
+//#include <mpi.h>
 
 
 using namespace std;
@@ -11,10 +11,13 @@ mutex mtx;
 void print_thread_id (int id)
 {
 
+	while(true)
+	{
 	mtx.lock();
 	cout << "thread #" << id << endl;
 	mtx.unlock();
 	cout << "development branch comment" << endl;
+	}
 }
 
 int main ()
@@ -31,7 +34,7 @@ int main ()
 
 	thread threads[5];
 
-for(int i = 0; i < 5; i++)
+	for(int i = 0; i < 5; i++)
 	{
 		threads[i] = thread(print_thread_id, i+1);
 	}
