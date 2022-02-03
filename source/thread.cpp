@@ -16,8 +16,9 @@ void print_thread_id (int id)
 	mtx.lock();
 	cout << "thread #" << id << endl;
 	mtx.unlock();
-	cout << "development branch comment" << endl;
 	}
+
+	cout << "development branch comment" << endl;
 }
 
 int main ()
